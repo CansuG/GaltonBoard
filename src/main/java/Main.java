@@ -1,7 +1,5 @@
 public class Main {
-
     static int[] array;
-
     public static void main(String[] args) throws InterruptedException {
 
         int numThreads = Integer.parseInt(args[0]);

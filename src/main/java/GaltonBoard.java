@@ -1,9 +1,7 @@
 import java.util.Random;
 
 public class GaltonBoard implements Runnable {
-
     public int numberOfCell;
-
     public GaltonBoard(int numOfCell) {
         this.numberOfCell = numOfCell;
     }
