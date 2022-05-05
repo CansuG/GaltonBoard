@@ -2,10 +2,10 @@ public class Main {
 
     static int[] array;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        int numBins = Integer.parseInt(args[1]);
         int numThreads = Integer.parseInt(args[0]);
+        int numBins = Integer.parseInt(args[1]);
         int galtonBoardsThread = 0;
 
         array = new int[numBins];
@@ -16,7 +16,7 @@ public class Main {
 
             Thread thread = new Thread(galtonBoard);
             thread.start();
-
+            thread.join();
         }
 
         for (int i = 0; i < array.length; i++) {
@@ -25,8 +25,8 @@ public class Main {
         }
 
 
-        System.out.println("Number of requested thread: "+ numThreads);
-        System.out.println("Sum of bin values : "+ galtonBoardsThread);
+        System.out.println("Number of requested thread: " + numThreads);
+        System.out.println("Sum of bin values : " + galtonBoardsThread);
 
     }
 }
