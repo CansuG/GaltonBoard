@@ -35,7 +35,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>estu.ceng.edu.Main</mainClass>
+                                    <mainClass>Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -59,7 +59,7 @@
                                 <!-- add Main-Class to manifest file -->
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ru.nick.kru.ParagonCase.Main</mainClass>
+                                    <mainClass>Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
