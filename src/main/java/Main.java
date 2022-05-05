@@ -2,8 +2,11 @@ public class Main {
     static int[] array;
     public static void main(String[] args) throws InterruptedException {
 
-        int numThreads = Integer.parseInt(args[0]);
-        int numBins = Integer.parseInt(args[1]);
+        int numThreads = Integer.parseInt(args[0]); // int numThreads = 30000;
+        int numBins = Integer.parseInt(args[1]);    // int numBins = 20;
+        /**
+        * When arguments aren't used, my code runs correctly. I couldn't solve "Error: Unable to access jarfile GaltonBoard.jar"
+        ***/
         int galtonBoardsThread = 0;
 
         array = new int[numBins];
